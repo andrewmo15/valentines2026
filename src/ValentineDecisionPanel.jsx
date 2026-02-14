@@ -13,7 +13,7 @@ export default function ValentineDecisionPanel({ noCount, setNoCount, setYesClic
 
     // grow yes button as `noCount` increases; at 20+ make it fullscreen
     const isFullscreen = noCount >= 15;
-    const yesScale = 1 + Math.min(noCount, 14) * 0.6; // preserved from original
+    const yesScale = 1 + Math.min(noCount, 14) * 0.8; // preserved from original
     // Use font-size and padding so layout reflows (prevents overlap)
     const yesStyle = isFullscreen
         ? {}
